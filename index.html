@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"href="style.css">
+  <meta charset="UTF-8">
+  <title>Stopwatch with Lap</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="sw"> Stopwatch </h1>
-    <div id="element">
-        <div id="display">
-            00:00:00:00
-        </div>
-        <div id="buttons">
-            <button id="stopbtn" onclick="stop()">Stop</button>
-            <button id="startbtn" onclick="start()">Start</button>
-            <button id="resetbtn" onclick="reset()">Reset</button>
-        </div>
-        <div id="lap">
-            <button id="lapbtn" onclick="lap()">Lap</button>
-            <button id="resetlapbtn" onclick="resetlap()">Reset Lap</button>
-        </div>
+  <h1 id="sw" >Stopwatch</h1>
+  <div id="stopwatch">
+    <h1 id="display">00:00:00:00</h1>
+    <div class="buttons">
+      <button id="startbtn" onclick="start()">Start</button>
+      <button id="stopbtn" onclick="stop()">Stop</button>
+      <button id="resetbtn" onclick="reset()">Reset</button>
     </div>
-    <div>
+    <div id="lap">
+      <button id="lapbtn" onclick="lap()">Lap</button>
     </div>
-    <script scr="index.js"></script>
+    <ul id="laps"></ul>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
